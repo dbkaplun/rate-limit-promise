@@ -1,0 +1,17 @@
+{
+  "name": "rate-limit-promise",
+  "version": "1.0.0",
+  "description": "Return a promise that is resolved as more requests can be made",
+  "repository": "dbkaplun/rate-limit-promise",
+  "bugs": "https://github.com/dbkaplun/rate-limit-promise/issues",
+  "homepage": "https://github.com/dbkaplun/rate-limit-promise#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test.js"
+  },
+  "devDependencies": {
+    "ava": "0.13.0"
+  },
+  "author": "Dan Kaplun <dbkaplun@gmail.com>",
+  "license": "MIT"
+}
