@@ -1,4 +1,4 @@
-# rate-limit-promise
+# rate-limit-promise [![Build Status](https://travis-ci.org/dbkaplun/rate-limit-promise.svg?branch=master)](https://travis-ci.org/dbkaplun/rate-limit-promise)
 Return a promise that is resolved as more requests can be made
 
 ## Installation
