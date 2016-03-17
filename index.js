@@ -9,10 +9,11 @@ module.exports = function rateLimit (count, ms) {
       if (bucket > 0) {
         bucket--
         resolve()
-        setTimeout(() => {
+        let timer = setTimeout(() => {
           bucket++
           if (queue.length) request().then(queue.pop())
         }, ms)
+        if (typeof timer.unref === 'function') timer.unref()
       }
       else queue.push(resolve)
     })
