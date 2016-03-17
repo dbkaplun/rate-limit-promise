@@ -13,7 +13,7 @@ module.exports = function rateLimit (count, ms) {
           bucket++
           if (queue.length) request().then(queue.pop())
         }, ms)
-        if (typeof timer.unref === 'function') timer.unref()
+        if (!queue.length && typeof timer.unref === 'function') timer.unref()
       }
       else queue.push(resolve)
     })
